@@ -63,6 +63,39 @@ Flask works on the **request-response cycle**. Here’s how it works in this app
 
 Here's the folder structure of the application:
 
-FlaskWebApp/ ├── archive.zip ├── MLWeb.py ├── archive/ │ └── star_classification.csv ├── ModelTraining/ │ └── Training.py ├── templates/ │ ├── form.html │ └── result.html └── models/ ├── model.pkl ├── scaler.pkl └── label_encoder.pkl
+FlaskWebApp├
+|───archive
+│       star_classification.csv
+│
+├───models
+│       label_encoder.pkl
+│       model.pkl
+│       scaler.pkl
+│
+├───ModelTraining
+│       Training.py
+│
+├───static
+│       styles.css
+│
+└───templates
+        form.html
+        result.html
 
 
+
+- **archive/**: Contains the dataset (in this case, `star_classification.csv`) used for training the model.
+- **ModelTraining/**: Contains the Python file for training the machine learning model.
+- **templates/**: This folder holds the HTML files used to render the web pages (`form.html` for user input and `result.html` for showing predictions).
+- **models/**: Contains the saved machine learning models (`model.pkl` for the classifier, `scaler.pkl` for feature scaling, and `label_encoder.pkl` for decoding predictions).
+
+---
+
+## Running the Application
+
+To run the application, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/FlaskWebApp.git
+   cd FlaskWebApp
