@@ -99,3 +99,11 @@ To run the application, follow these steps:
    ```bash
    git clone https://github.com/yourusername/FlaskWebApp.git
    cd FlaskWebApp
+2. ``` Install the required dependencies
+   pip install -r requirements.txt
+
+3. ``` Run the flask application
+   python MLWeb.py
+4. By default, the app will run on http://127.0.0.1:5000/.
+
+Open the application in a web browser and start interacting with the form!
