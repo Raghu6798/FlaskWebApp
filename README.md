@@ -10,12 +10,6 @@ This project is a **Stellar Classification Web Application** built using **Flask
 - [How Flask Works](#how-flask-works)
 - [Application Structure](#application-structure)
 - [Running the Application](#running-the-application)
-- [Styling the Form](#styling-the-form)
-- [Rendering HTML Templates](#rendering-html-templates)
-- [Routing in Flask](#routing-in-flask)
-- [Machine Learning Model Integration](#machine-learning-model-integration)
-- [Conclusion](#conclusion)
-
 ---
 
 ## Introduction
