@@ -91,7 +91,7 @@ To run the application, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/FlaskWebApp.git
+   git clone https://github.com/Raghu6798/FlaskWebApp.git
    cd FlaskWebApp
 2. ``` Install the required dependencies
    pip install -r requirements.txt
