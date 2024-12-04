@@ -63,3 +63,6 @@ Flask works on the **request-response cycle**. Here’s how it works in this app
 
 Here's the folder structure of the application:
 
+FlaskWebApp/ ├── archive.zip ├── MLWeb.py ├── archive/ │ └── star_classification.csv ├── ModelTraining/ │ └── Training.py ├── templates/ │ ├── form.html │ └── result.html └── models/ ├── model.pkl ├── scaler.pkl └── label_encoder.pkl
+
+
