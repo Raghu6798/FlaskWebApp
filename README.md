@@ -28,7 +28,6 @@ This is a simple **Stellar Classification WebApp** that uses a machine learning 
 
 - **Flask**: A micro web framework for Python that is used to build the web application.
 - **HTML/CSS**: For creating and styling the user interface.
-- **JavaScript (optional)**: For any front-end interactions.
 - **Python**: For the back-end, where we handle the machine learning model prediction.
 - **Machine Learning Model (saved as `model.pkl`)**: A pre-trained model for stellar classification.
 - **MinMaxScaler**: For scaling the input features before feeding them into the model.
