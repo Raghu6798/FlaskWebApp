@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+        }
+
+        /* Container for the result content */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: linear-gradient(90deg, #2196F3, #9C27B0); /* Blue to Violet Gradient */
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Result box styling */
+        .result-box {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px; /* Limit the width of result box */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        /* Title styling */
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Prediction text styling */
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Strong tag for highlighted prediction result */
+        strong {
+            font-size: 20px;
+            color: #2196F3;
+            font-weight: bold;
+        }
+
+        /* Back link styling */
+        a {
+            font-size: 16px;
+            color: #9C27B0;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        /* Hover effect for the back link */
+        a:hover {
+            color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result-box">
+            <h2>Prediction Result:</h2>
+            <p>The predicted class label is: <strong>{{ prediction }}</strong></p>
+            <a href="/">Go back to the form</a>
+        </div>
+    </div>
+</body>
+</html>
