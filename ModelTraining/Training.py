@@ -6,13 +6,12 @@ from sklearn.metrics import precision_score, recall_score
 import joblib
 
 # Load dataset
-df = pd.read_csv(r'C:\Users\Raghu\Downloads\Flask_ML\archive\star_classification.csv')
+df = pd.read_csv('archive/star_classification.csv')
 
 # Encode target variable
 label_encoder = LabelEncoder()
 y = label_encoder.fit_transform(df['class'])
-
-joblib.dump(label_encoder, r'C:\Users\Raghu\Downloads\Flask_ML\models\label_encoder.pkl')
+joblib.dump(label_encoder, 'models/label_encoder.pkl')
 
 # Prepare features
 X = df.drop(columns=['class'], axis=1)
@@ -24,9 +23,7 @@ X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_st
 scaler = MinMaxScaler()
 X_train = scaler.fit_transform(X_train)
 X_val = scaler.transform(X_val)
-
-# Save the scaler
-joblib.dump(scaler, r'C:\Users\Raghu\Downloads\Flask_ML\models\scaler.pkl')
+joblib.dump(scaler, 'models/scaler.pkl')
 
 # Define class weights
 class_weights = {
@@ -38,8 +35,6 @@ class_weights = {
 # Train model
 model = RandomForestClassifier(class_weight=class_weights, random_state=42)
 model.fit(X_train, y_train)
-
-# Save the model
-joblib.dump(model, r'C:\Users\Raghu\Downloads\Flask_ML\models\model.pkl')
+joblib.dump(model, 'models/model.pkl')
 
 print("Model, scaler, and label encoder saved.")
