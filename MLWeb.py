@@ -5,9 +5,9 @@ import numpy as np
 app = Flask(__name__)
 
 # Load pre-trained components
-model = joblib.load(r'C:\Users\Raghu\Downloads\Flask_ML\models\model.pkl')
-scaler = joblib.load(r'C:\Users\Raghu\Downloads\Flask_ML\models\scaler.pkl')
-label_encoder = joblib.load(r'C:\Users\Raghu\Downloads\Flask_ML\models\label_encoder.pkl')
+model = joblib.load(r'.\model.pkl')
+scaler = joblib.load(r'.\scaler.pkl')
+label_encoder = joblib.load(r'.\label_encoder.pkl')
 
 @app.route('/')
 def home():
